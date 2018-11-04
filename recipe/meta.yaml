@@ -1,4 +1,4 @@
-{% set version = '1.0-2' %}
+{% set version = '1.0-3' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -7,17 +7,16 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: bcROCsurface_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/bcROCsurface_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bcROCsurface/bcROCsurface_{{ version }}.tar.gz
-  sha256: f017a7aee0b38f482ee19430e811bff864f045633d277dd253255375df923f6c
+  sha256: d44a1b2f456508d10d901e662cb4813f517cc89682e6e179c131dc6b972234bd
 
 build:
   merge_build_host: True  # [win]
   number: 0
   # no r-rgl package for macOS
-  skip: true  # [win32 or osx]
+  skip: true  # [osx]
   rpaths:
     - lib/R/lib/
     - lib/
@@ -71,3 +70,4 @@ extra:
     - daler
     - jdblischak
     - cbrueffer
+    - dbast
