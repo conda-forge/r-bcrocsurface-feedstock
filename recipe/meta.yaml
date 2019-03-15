@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 0
+  number: 1
   # no r-rgl package for macOS
   skip: true  # [osx]
   rpaths:
@@ -28,8 +28,6 @@ requirements:
     - {{native}}toolchain        # [win]
     - {{posix}}filesystem        # [win]
     - {{posix}}make
-    - {{posix}}sed  # [win]
-    - {{posix}}coreutils  # [win]
     - {{posix}}sed               # [win]
     - {{posix}}coreutils         # [win]
     - {{posix}}zip               # [win]
@@ -60,14 +58,31 @@ about:
   summary: The bias-corrected estimation methods for the receiver operating characteristics ROC
     surface and the volume under ROC surfaces (VUS) under missing at random (MAR) assumption.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
+    - conda-forge/r
+
+# Package: bcROCsurface
+# Version: 1.0-3
+# Date: 2018-10-16
+# Title: Bias-Corrected Methods for Estimating the ROC Surface of Continuous Diagnostic Tests
+# Author: Khanh To Duc, with contributions from Monica Chiogna and Gianfranco Adimari
+# Maintainer: Khanh To Duc <toduc@stat.unipd.it>
+# Description: The bias-corrected estimation methods for the receiver operating characteristics ROC surface and the volume under ROC surfaces (VUS) under missing at random (MAR) assumption.
+# License: GPL (>= 2)
+# Depends: R(>= 2.15.0), nnet, rgl, boot, stats, utils, graphics, parallel
+# Imports: Rcpp (>= 0.12.2)
+# LinkingTo: Rcpp, RcppArmadillo
+# LazyLoad: yes
+# LazyData: TRUE
+# ByteCompile: yes
+# Encoding: UTF-8
+# RoxygenNote: 6.1.0
+# Suggests: knitr, rmarkdown
+# VignetteBuilder: knitr
+# NeedsCompilation: yes
+# Packaged: 2018-10-16 15:00:01 UTC; khanh
+# Repository: CRAN
+# Date/Publication: 2018-10-16 18:30:06 UTC
