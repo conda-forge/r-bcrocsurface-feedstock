@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About r-bcrocsurface
 ====================
 
@@ -18,9 +14,54 @@ Summary: The bias-corrected estimation methods for the receiver operating charac
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-bcrocsurface-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-bcrocsurface-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-bcrocsurface-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-bcrocsurface-feedstock/branch/master)
-![OSX disabled](https://img.shields.io/badge/OSX-disabled-lightgrey.svg)
+
+<table><tr>
+    <td>Appveyor</td>
+    <td>
+      <a href="https://ci.appveyor.com/project/conda-forge/r-bcrocsurface-feedstock/branch/master">
+        <img alt="windows" src="https://img.shields.io/appveyor/ci/conda-forge/r-bcrocsurface-feedstock/master.svg?label=Windows">
+      </a>
+    </td>
+  </tr>
+    
+  <tr>
+    <td>Azure</td>
+    <td>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3344&branchName=master">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-bcrocsurface-feedstock?branchName=master">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>linux_target_platformlinux-64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3344&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-bcrocsurface-feedstock?branchName=master&jobName=linux&configuration=linux_target_platformlinux-64" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_target_platformwin-64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3344&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-bcrocsurface-feedstock?branchName=master&jobName=win&configuration=win_target_platformwin-64" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </td>
+  </tr>
+  <tr>
+    <td>OSX</td>
+    <td>
+      <img src="https://img.shields.io/badge/OSX-disabled-lightgrey.svg" alt="OSX disabled">
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
