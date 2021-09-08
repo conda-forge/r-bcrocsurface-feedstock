@@ -3,7 +3,7 @@ About r-bcrocsurface
 
 Home: https://CRAN.R-project.org/package=bcROCsurface
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-bcrocsurface-feedstock/blob/master/LICENSE.txt)
 

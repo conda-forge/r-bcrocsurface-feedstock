@@ -1,4 +1,4 @@
-{% set version = "1.0-4" %}
+{% set version = "1.0-5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bcROCsurface_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bcROCsurface/bcROCsurface_{{ version }}.tar.gz
-  sha256: 59eaca502e98d0786114b9199ad02da86099405d8e892f21450a1d7553e61c2e
+  sha256: 2e5849ff7ef4bea7db07952323bf5b92706a6257bb10851863bd7e959e8a47ca
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   # no r-rgl package for macOS
   skip: true  # [osx]
   rpaths:
@@ -60,11 +60,11 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=bcROCsurface
-  license: GPL (>= 2)
-  summary: The bias-corrected estimation methods for the receiver operating characteristics ROC
-    surface and the volume under ROC surfaces (VUS) under missing at random (MAR) assumption.
+  license: GPL-2.0-or-later
+  summary: The bias-corrected estimation methods for the receiver operating characteristics ROC surface and the volume under ROC surfaces (VUS) under missing at random (MAR) assumption.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
