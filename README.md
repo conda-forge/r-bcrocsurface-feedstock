@@ -3,6 +3,7 @@ About r-bcrocsurface-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-bcrocsurface-feedstock/blob/main/LICENSE.txt)
 
+
 About r-bcrocsurface
 --------------------
 
@@ -11,6 +12,7 @@ Home: https://CRAN.R-project.org/package=bcROCsurface
 Package license: GPL-2.0-or-later
 
 Summary: The bias-corrected estimation methods for the receiver operating characteristics ROC surface and the volume under ROC surfaces (VUS) under missing at random (MAR) assumption.
+
 About r-bcrocsurface
 --------------------
 
