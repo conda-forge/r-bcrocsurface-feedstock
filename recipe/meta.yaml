@@ -1,4 +1,4 @@
-{% set version = "1.0-5" %}
+{% set version = "1.0-6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bcROCsurface_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bcROCsurface/bcROCsurface_{{ version }}.tar.gz
-  sha256: 2e5849ff7ef4bea7db07952323bf5b92706a6257bb10851863bd7e959e8a47ca
+  sha256: 9e0112cac7878a2f8c940252d8e38a128063c85fa601751bb9b212dec6271f3c
 
 build:
   merge_build_host: true  # [win]
-  number: 3
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
