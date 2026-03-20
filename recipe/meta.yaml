@@ -3,7 +3,7 @@
 
 package:
   name: r-bcrocsurface
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
@@ -12,7 +12,7 @@ source:
   sha256: 9e0112cac7878a2f8c940252d8e38a128063c85fa601751bb9b212dec6271f3c
 
 build:
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
@@ -30,11 +30,6 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
-    - {{ cdt('mesa-libgl-devel') }}  # [linux]
-    - {{ cdt('libxdamage') }}        # [linux]
-    - {{ cdt('libxfixes') }}         # [linux]
-    - {{ cdt('libxxf86vm') }}        # [linux]
-    - {{ cdt('mesa-dri-drivers') }}  # [linux]
   host:
     - r-base
     - r-rcpp >=0.12.2
@@ -42,6 +37,7 @@ requirements:
     - r-boot
     - r-nnet
     - r-rgl
+    - libgl-devel                    # [linux]
   run:
     - r-base
     - r-rcpp >=0.12.2
